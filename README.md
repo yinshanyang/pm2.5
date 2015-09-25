@@ -1,4 +1,4 @@
-# PM2.5 (*Mac-only for Now*)
+# PM2.5 (*Mac-only for now*)
 
   > Because I’m sick of reading 3-hour moving averages.
 
