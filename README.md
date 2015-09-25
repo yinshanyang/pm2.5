@@ -9,3 +9,9 @@
 ## Where does the Data Come From?
 
   Well, we are scraping it from here: http://www.haze.gov.sg/haze-updates/pollutant-concentrations/type/PM25-1Hr
+
+# What Completely Sucks with this App?
+
+  - An icon. The app totally needs an icon. Probably something grey.
+  - 100-odd mega-ga-gi-bytes for a puny app like this? Yes. I know. The size is excessive. But it’s a 0.1.0 release, and I’ll have to trim the fat out of the wonderful [Electron](http://electron.atom.io/) to get the size down. Oh yea, have I mentioned? This is built with the awesome [Electron](http://electron.atom.io/).
+
