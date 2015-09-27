@@ -6,7 +6,7 @@
     "start": "./node_modules/.bin/electron .",
     "clean": "touch PM2.5.app && touch PM2.5-darwin-x64 && rm -rf PM2.5.app && rm -rf PM2.5-darwin-x64",
     "zip": "mv ./PM2.5-darwin-x64/PM2.5.app ./ && zip -ryXq PM2.5.app.zip PM2.5.app",
-    "build-osx": "touch PM2.5.app.zip && rm PM2.5.app.zip && electron-packager . 'PM2.5' --platform=darwin --arch=x64 --version=0.33.1 --ignore=node_modules/electron --icon=Icon.icns && npm run zip && npm run clean",
+    "build-osx": "touch PM2.5.app.zip && rm PM2.5.app.zip && electron-packager . 'PM2.5' --platform=darwin --arch=x64 --version=0.33.1 --ignore=node_modules/electron --prune --icon=Icon.icns && npm run zip && npm run clean",
     "build": "npm run build-osx && npm run build-icon"
   },
   "devDependencies": {

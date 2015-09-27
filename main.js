@@ -1,4 +1,5 @@
 var app = require('app'),
+  ipc = require('ipc'),
   Menu = require('menu'),
   Tray = require('tray'),
   NativeImage = require('native-image'),
@@ -62,9 +63,13 @@ function poll() {
     method: 'get',
     json: true
   }, function(err, res, body) {
-    if (err) throw err;
-    pm25 = body[area].value;
-    appIcon.setTitle([area[0].toUpperCase(), pm25].join(':'));
+    if (err) {
+      appIcon.setTitle([area[0].toUpperCase(), '✖'].join(':'));
+    }
+    else {
+      pm25 = body[area].value;
+      appIcon.setTitle([area[0].toUpperCase(), pm25].join(':'));
+    }
   });
 
   timer = setTimeout(poll, interval);
