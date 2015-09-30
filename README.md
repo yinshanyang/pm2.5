@@ -14,6 +14,8 @@
 
   The numbers represented is the deprived [Air Quality Index (AQI)](https://en.wikipedia.org/wiki/Air_quality_index) based on the hourly PM2.5 readings. It is comparable to the PSI.
 
+  The formula for deriving the AQI from PM2.5 concentrations is found here: https://en.wikipedia.org/wiki/Air_quality_index#Computing_the_AQI
+
 ## Where does the Data Come From?
 
   Well, we are scraping it from here: http://www.haze.gov.sg/haze-updates/pollutant-concentrations/type/PM25-1Hr
